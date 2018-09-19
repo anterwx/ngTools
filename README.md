@@ -1,27 +1,40 @@
-# NgTools
+# NgTools 演示ng-packagr 构建Angular组件库
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+## [ng-packagr](https://www.npmjs.com/package/ng-packagr)<br>
 
-## Development server
+这个项目是基于 [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 代码
+```bash
+    # 克隆
+    git clone git@github.com:anterwx/ngTools.git
 
-## Code scaffolding
+    # 切换目录
+    cd ngTools
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    # 安装
+    yarn
+```
+## 构建
+```bash
+    # 执行ng-packagr，生成dist目录 dist/packages-dist/util/
+    node scripts/build/packing uitl
 
-## Build
+    # 切换
+    cd dist/packages-dist/util/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+    # 打包组件库，在此目录下生成包 xxx-versions.tgz，就可以上传到NPM发布
+    npm pack
+```
+## 发布
+```bash
+    # 有两种方式：
 
-## Running unit tests
+    1、登录npm官网，上传xxx-versions.tgz包
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    2、npm publish
 
-## Running end-to-end tests
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## 使用
+> 略…
