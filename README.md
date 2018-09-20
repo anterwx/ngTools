@@ -1,5 +1,5 @@
 # 演示ng-packagr 构建Angular组件库
-## 通常在开发过程中，我们会把通用的组件、服务、函数等封装到模块中并对外提供自己的API，供业务模块调用。[ng-packagr](https://www.npmjs.com/package/ng-packagr)是一个将库透明化为Angular包格式的工具，这样构建出来的Angular包很容易应用到angular-cli项目中。
+ 通常在开发过程中，我们会把通用的组件、服务、函数等封装到模块中并对外提供自己的API，供业务模块调用。[ng-packagr](https://www.npmjs.com/package/ng-packagr)是一个将库透明化为Angular包格式的工具，这样构建出来的Angular包很容易应用到angular-cli项目中。<br>
 这个项目是基于 [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
 ## 代码
