@@ -1,4 +1,4 @@
-# NgTools 演示ng-packagr 构建Angular组件库
+# 演示ng-packagr 构建Angular组件库
 
 ## [ng-packagr](https://www.npmjs.com/package/ng-packagr)<br>
 
@@ -28,11 +28,10 @@
 ```
 ## 发布
 ```bash
-    # 有两种方式：
-
-    1、登录npm官网，上传xxx-versions.tgz包
-
-    2、npm publish
+    # 发布
+    npm publish
+    # 注意，应用我的包名以'@'开头，所以是一个范围包，发布的时候需要特殊处理下，默认情况下NPM会你注册名或者加入的组织为一个scope范围，所以包名是@zjmy/util的话，注册名就应该是zjmy，才能顺利发布到NPM上
+    npm publish --access=public
 
 ```
 
