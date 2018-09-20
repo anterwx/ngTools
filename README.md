@@ -37,4 +37,45 @@
 ```
 
 ## 使用
-> 略…
+```bash
+    # 安装
+    yarn add @zjmy/util
+```
+在src/app/app.module.ts中导入模块
+```bash
+    import { ZJMYUtilModule } from '@zjmy/util';
+    @NgModule({
+        imports:[
+            ...
+            ZJMYUtilModule.forRoot()
+            ...
+        ],
+        ...
+    })
+```
++ 这样我们就可以使用ZJMYUtilModule模块中导出的组件和服务了（虽然还没有任何组件、服务，现在我们可以往模块添加组件、服务了）<br>
++ 同时我们也可以使用导出的函数，如Trie、convert中的函数。
+```bash
+    import { Trie } from '@zjmy/util';
+    ...
+
+    const o = new Trie();
+    o.insertData('我爱你中国');
+    o.insertData('我爱你');
+    o.insertData('我爱你中国');
+    o.insertData('我爱你宝贝');
+    o.insertData('我爱你中原');
+    o.insertData('爱你一万年');
+    o.insertData('永远爱你');
+    o.insertData('爱你真的好难');
+
+    o.printData();
+
+    // console 输出：
+    // > 我爱你中原
+    // > 我爱你中国
+    // > 我爱你宝贝
+    // > 永远爱你
+    // > 爱你一万年
+    // > 爱你真的好难
+```
