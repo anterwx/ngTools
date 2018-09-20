@@ -1,8 +1,15 @@
 {
-    "name": "@zjmy/util",
-    "version": "0.0.1",
-    "peerDependencies": {
-      "@angular/common": "^6.0.2",
-      "@angular/core": "^6.0.2"
-    }
+  "name": "@zjmy/util",
+  "version": "0.0.1",
+  "author": "anterwx45@gmail.com",
+  "license": "MIT",
+  "keywords": [
+    "typeScript",
+    "angular",
+    "component"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^6.0.2",
+    "@angular/core": "^6.0.2"
   }
+}
