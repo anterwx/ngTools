@@ -99,10 +99,9 @@
 + 结果如下：<br>
 ![app-hello](/src/assets/img/hello.png)
 <br>
-当然除了组件以外，我们还可以添加服务接口等，服务需提供 [providers]() 配置项导出，接口、类也一样。
-<br>
+> 当然除了组件以外，我们还可以添加服务接口等，服务需提供 [providers]() 配置项导出，接口、类也一样。
 ### 使用函数、类 
-- 使用导出的函数、类，如 [trie](https://github.com/anterwx/ngTools/tree/master/packages/util/src/trie)、[convert](https://github.com/anterwx/ngTools/tree/master/packages/util/src/convert) 。
+使用导出的函数、类，如 [trie](https://github.com/anterwx/ngTools/tree/master/packages/util/src/trie)、[convert](https://github.com/anterwx/ngTools/tree/master/packages/util/src/convert) 。
 ```bash
     import { Trie } from '@zjmy/util';
     ...
