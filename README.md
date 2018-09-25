@@ -56,12 +56,32 @@
     })
 ```
 + 这样我们就可以使用ZJMYUtilModule模块中导出的组件和服务了（虽然还没有任何组件、服务，接下来我会往模块添加组件、服务了）
+
+添加、导出组件
+```bash
+    # 简单添加了一个打招呼组件
+    src/hello/helloComponent.ts
+
+    # 记得在uitl.module.ts模块中导出
+    exports: [helloComponent]
+```
+在AppComponent模板中使用
+```bash
+    <app-hello name="xiaoming" age="6"></app-hello>
+    <app-hello name="xiaohong" age="8"></app-hello>
+```
+结果如下：<br><br>
+![app-hello](/src/assets/img/hello.png)
+<br>
+> 当然除了组件以外，我们还可以添加服务接口等，服务需提供providers配置项导出，接口、类也一样。
+<br>
 + 同时我们也可以使用导出的函数，如Trie、convert中的函数。
 ```bash
     import { Trie } from '@zjmy/util';
     ...
 
     const o = new Trie();
+    // 插入
     o.insertData('我爱你中国');
     o.insertData('我爱你');
     o.insertData('我爱你中国');
@@ -71,13 +91,14 @@
     o.insertData('永远爱你');
     o.insertData('爱你真的好难');
 
+    // 打印
     o.printData();
 
-    // console 输出：
-    // > 我爱你中原
-    // > 我爱你中国
-    // > 我爱你宝贝
-    // > 永远爱你
-    // > 爱你一万年
-    // > 爱你真的好难
+    // 运行 console 输出：
+    > 我爱你中原
+    > 我爱你中国
+    > 我爱你宝贝
+    > 永远爱你
+    > 爱你一万年
+    > 爱你真的好难
 ```
