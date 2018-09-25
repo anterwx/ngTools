@@ -99,7 +99,7 @@
 + 结果如下：<br>
 ![app-hello](/src/assets/img/hello.png)
 <br>
-> 当然除了组件以外，我们还可以添加服务接口等，服务需提供 [providers]() 配置项导出，接口、类也一样。
+当然除了组件以外，我们还可以添加服务接口等，服务需提供 [providers](https://github.com/anterwx/ngTools/blob/master/packages/util/util.module.ts) 配置项导出，接口、类也一样。
 <br>
 
 ### 使用函数、类 
