@@ -27,7 +27,7 @@
 ## 发布
 > 前提：注册一个[NPM](https://www.npmjs.com/)账号
 ```bash
-    # 登录npm账号
+    # 登录npm账号，注意：记得把npm源切换回来（npm config set registry=https://registry.npmjs.org）
     npm login
     # 检测是否登录成功,成功会打印当前登录的用户名
     npm whoami
@@ -70,10 +70,10 @@
     <app-hello name="xiaoming" age="6"></app-hello>
     <app-hello name="xiaohong" age="8"></app-hello>
 ```
-结果如下：<br><br>
+结果如下：<br>
 ![app-hello](/src/assets/img/hello.png)
 <br>
-> 当然除了组件以外，我们还可以添加服务接口等，服务需提供providers配置项导出，接口、类也一样。
+当然除了组件以外，我们还可以添加服务接口等，服务需提供providers配置项导出，接口、类也一样。
 <br>
 + 同时我们也可以使用导出的函数，如Trie、convert中的函数。
 ```bash
