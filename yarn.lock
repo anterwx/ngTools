@@ -356,9 +356,9 @@
     "@webassemblyjs/wast-parser" "1.4.3"
     long "^3.2.0"
 
-"@zjmy/util@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.npmjs.org/@zjmy/util/-/util-0.0.1.tgz#8011f070757877dd08513bea35041f01271cf53b"
+"@zjmy/util@^0.0.3-beta2":
+  version "0.0.3-beta2"
+  resolved "https://registry.npmjs.org/@zjmy/util/-/util-0.0.3-beta2.tgz#3bc79efc5d21d6eba27b70dd647c640b5f079613"
   dependencies:
     tslib "^1.9.0"
 
