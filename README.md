@@ -101,8 +101,8 @@
 <br>
 当然除了组件以外，我们还可以添加服务接口等，服务需提供 [providers]() 配置项导出，接口、类也一样。
 <br>
-### 使用函数、类
-+ 使用导出的函数、类，如 [trie](https://github.com/anterwx/ngTools/tree/master/packages/util/src/trie)、[convert](https://github.com/anterwx/ngTools/tree/master/packages/util/src/convert) 。
+### 使用函数、类 
+- 使用导出的函数、类，如 [trie](https://github.com/anterwx/ngTools/tree/master/packages/util/src/trie)、[convert](https://github.com/anterwx/ngTools/tree/master/packages/util/src/convert) 。
 ```bash
     import { Trie } from '@zjmy/util';
     ...
@@ -120,9 +120,8 @@
 
     // 打印
     o.printData();
-```
-+ 运行 console 输出：
-```bash
+    
+    // 运行 console 输出：
     > 我爱你中原
     > 我爱你中国
     > 我爱你宝贝
