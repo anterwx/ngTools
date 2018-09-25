@@ -58,7 +58,7 @@
     npm whoami
     # 发布
     npm publish
-    # 注意，应用我的包名以'@'开头，所以是一个范围包，发布的时候需要特殊处理下，默认情况下NPM会你注册名或者加入的组织为一个scope范围，所以包名是@zjmy/util的话，注册名就应该是zjmy，才能顺利发布到NPM上
+    # 注意，应用我的包名以'@'开头，所以是一个范围包，发布的时候需要特殊处理下，默认情况下NPM会你注册名或者加入的组织为一个scope范围，所以包名是@zjmy/util的话，注册名或组织名称就应该是zjmy，才能顺利发布到NPM上
     npm publish --access=public
 
 ```
@@ -81,28 +81,28 @@
     })
 ```
 ### 使用组件
-+ 这样我们就可以使用 [ZJMYUtilModule](https://github.com/anterwx/ngTools/blob/master/packages/util/util.module.ts) 模块中导出的组件和服务了（虽然还没有任何组件、服务，接下来我会往模块添加组件、服务了）
+使用 [ZJMYUtilModule](https://github.com/anterwx/ngTools/blob/master/packages/util/util.module.ts) 模块中导出的组件和服务了，以下以组件为例。
 
-添加、导出组件
++ 添加、导出组件
 ```bash
-    # 简单添加了一个打招呼组件
+    # 添加一个简单打招呼组件
     src/hello/helloComponent.ts
 
-    # 记得在uitl.module.ts模块中导出
+    # 在uitl.module.ts模块中导出
     exports: [helloComponent]
 ```
-在 [app.component.html](https://github.com/anterwx/ngTools/blob/master/src/app/app.component.html) 模板中使用
++ 在 [app.component.html](https://github.com/anterwx/ngTools/blob/master/src/app/app.component.html) 模板中使用
 ```bash
     <app-hello name="xiaoming" age="6"></app-hello>
     <app-hello name="xiaohong" age="8"></app-hello>
 ```
-结果如下：<br>
++ 结果如下：<br>
 ![app-hello](/src/assets/img/hello.png)
 <br>
 当然除了组件以外，我们还可以添加服务接口等，服务需提供 [providers]() 配置项导出，接口、类也一样。
 <br>
 ### 使用函数、类
-+ 同时我们也可以使用导出的函数、类，如 [trie](https://github.com/anterwx/ngTools/tree/master/packages/util/src/trie)、[convert](https://github.com/anterwx/ngTools/tree/master/packages/util/src/convert) 。
++ 使用导出的函数、类，如 [trie](https://github.com/anterwx/ngTools/tree/master/packages/util/src/trie)、[convert](https://github.com/anterwx/ngTools/tree/master/packages/util/src/convert) 。
 ```bash
     import { Trie } from '@zjmy/util';
     ...
@@ -120,8 +120,9 @@
 
     // 打印
     o.printData();
-
-    // 运行 console 输出：
+```
++ 运行 console 输出：
+```bash
     > 我爱你中原
     > 我爱你中国
     > 我爱你宝贝
@@ -129,3 +130,4 @@
     > 爱你一万年
     > 爱你真的好难
 ```
+    
